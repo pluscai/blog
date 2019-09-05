@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/**
+变量
+计算功能
+嵌套
+注释
+代码重用
+	继承
+	Mixin
+	颜色函数
+	插入文件
+
+高级用法
+	条件语句
+	循环语句
+	自定义函数
+ */
+div {
+    color: #ccc;
+}
+
+/**
+变量
+ */
+div {
+    color: #1875e7;
+}
+
+.rounded {
+    border-left-radius: 5px;
+}
+
+body {
+    margin: 7px;
+    top: 150px;
+    right: 10%;
+}
+
+/**
+选择器嵌套
+ */
+div h1 {
+    color: red;
+}
+
+/**
+属性嵌套
+ */
+p {
+    border-color: red;
+}
+
+/**
+嵌套代码内，可使用&引用父元素
+ */
+a:hover {
+    color: #fff;
+}
+
+/*comment1*/
+/*!
+  comment3
+ */
+.class1, .class2 {
+    border: 1px solid #ddd;
+}
+
+.class2 {
+    font-size: 120%;
+}
+
+/*mixin定义一个代码块*/
+div {
+    float: left;
+    margin-left: 10px;
+}
+
+/*mixin可以指定参数和缺省值,
+  使用的时候可以根据需要加入参数*/
+div {
+    float: right;
+    margin-left: 10px;
+}
+
+div2 {
+    float: right;
+    margin-left: 20px;
+}
+
+/*用mixin生成浏览器前缀*/
+#navbar li {
+    　　　　border-top-left-radius: 10px;
+    　　　　-moz-border-radius-topleft: 10px;
+    　　　　-webkit-border-top-left-radius: 10px;
+}
+
+#footer {
+    　　　　border-top-left-radius: 5px;
+    　　　　-moz-border-radius-topleft: 5px;
+    　　　　-webkit-border-top-left-radius: 5px;
+}
+
+div {
+    color: #a3a329;
+}
+
+/*条件语句*/
+p {
+    border: 1px solid;
+}
+
+/*循环语句*/
+　.border-1 {
+    border: 1px solid blue;
+}
+
+　.border-2 {
+    border: 2px solid blue;
+}
+
+　.border-3 {
+    border: 3px solid blue;
+}
+
+　.border-4 {
+    border: 4px solid blue;
+}
+
+.item-6 {
+    width: 12em;
+}
+
+.item-4 {
+    width: 8em;
+}
+
+.item-2 {
+    width: 4em;
+}
+
+/*.a {
+    background-image: url("/image/a.jpg");
+}
+
+.b {
+    background-image: url("/image/b.jpg");
+}
+
+.c {
+    background-image: url("/image/c.jpg");
+}
+
+.d {
+    background-image: url("/image/d.jpg");
+}*/
+
+/*自定义函数*/
+.sidebar {
+    margin-right: 15px;
+}
